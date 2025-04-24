@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Bodoni Moda", serif;
+}
+
+header {
+  background-color: rgb(25, 73, 25);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  padding: 12px;
+  font-style: italic;
+  color: #fff;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 32px;
+  padding: 12px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.destaque {
+  margin-top: 58px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.destaque .principal {
+  margin-left: 50px;
+}
+
+.principal h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(25, 73, 25);
+  margin-bottom: 25px;
+  border-bottom: 2px solid rgb(25, 73, 25);
+}
+
+.principal p{
+  font-size: 18px;
+}
+
+.titulo {
+  margin-top: 50px;
+}
+
+.navegacao {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25.3%);
+}
+
+.navegacao article img{
+  width: 250px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.navegacao article h3,
+.navegacao article p,
+.navegacao article button {
+  width: 250px;
+}
+
+.navegacao h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.navegacao p {
+  font-size: 13px;
+  margin-bottom: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navegacao button {
+  padding: 8px;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(25, 73, 25);
+  color: #fff;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.navegacao button:hover {
+  background-color: rgb(73, 142, 73);
+}
+
+.carossel-imagens img{
+  margin-right: 8px;
+  width: 100%; 
+  height: auto;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .destaque img {
+    justify-content: center;
+  }
+
+  .destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 58px;
+  }
+
+  .destaque article h2 {
+    margin-top: 50px;
+  }
+
+  .destaque .principal {
+    margin-left: 0px;
+  }
+
+  .navegacao {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+  }
+
+  .navegacao article img {
+    width: 100%;
+    height: auto;
+  }
+  .navegacao article h3,
+  .navegacao article p,
+  .navegacao article button {
+    width: 100%;
+  }
+
+  .navegacao {
+    grid-gap: 16px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    padding: 6px 0;
+  }
+
+  nav ul li a {
+    text-align: center;
+    padding: 12px 0;
+  }
+  
+  .container {
+    width: 90%;
+  }
+
+  .destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destaque article h2 {
+    margin-top: 50px;
+  }
+
+  .destaque .principal {
+    margin-left: 0px;
+  }
+
+  .navegacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navegacao article h3,
+  .navegacao article p,
+  .navegacao article button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .navegacao article button {
+    margin-bottom: 20px;
+  }
+
+  .carossel-imagens {
+    width: 100%;
+    margin: 0 auto 1px auto;
+  } 
+
+  .carossel-imagens img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .navegacao article {
+    width: 100%;
+  }
+}
